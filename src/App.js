@@ -1,10 +1,17 @@
 import React from 'react';
-import './App.css';
+import './css/App.css';
+import AutoComplete from './components/AutoComplete';
 
 function App() {
+
   return (
     <div className="App">
-      <h4>Search Books</h4>
+      <div className="App-Component">
+        <div className="App-Component">
+          <h4>Search Books</h4>
+          <AutoComplete />
+        </div>
+       </div>
     </div>
   );
 }

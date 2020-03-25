@@ -1,0 +1,73 @@
+.AutoCompleteText {
+    /* width:100%;
+    border: 1px solid grey;
+    box-shadow: 0 0 0 1px rgba(0,0,0,0.1), 0 2px 4px 1px rgba(0,0,0,0.18);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    color: rgba(0,0,0,0.73); */
+}
+.column {
+    float: left;
+    width: 33%;
+    padding: 0 10px;
+  }
+  * {
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+  /* Remove extra left and right margins, due to padding */
+.row {margin: 0 -5px;}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+/* Responsive columns */
+@media screen and (max-width: 1000px) {
+    .column {
+      width: 100%;
+      display: block;
+      margin-bottom: 20px;
+    }
+  }
+  
+  /* Style the counter cards */
+  .card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    padding: 16px;
+    text-align: center;
+    background-color: #f1f1f1;
+  }
+
+.AutoCompleteText input{
+    width: 100%;
+    border: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    color: rgba(0,0,0,0.73);
+    padding: 10px, 5px;
+    box-sizing: border-box;
+    outline: none;
+}
+
+.AutoCompleteText ul {
+    list-style-type: none;
+    text-align: left;
+    margin:0;
+    padding: 0;
+}
+
+.AutoCompleteText li {
+    padding: 10px 5px;
+}
+
+.App-Component{
+    margin: 100px auto 0 auto;
+    width: 100%;
+}
