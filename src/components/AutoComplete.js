@@ -1,24 +1,8 @@
 import React, { useState } from 'react';
 import '../css/AutoComplete.css';
+import http from '../helpers/http';
 
 const AutoComplete = () => {
-
-    // Example POST method implementation:
-async function postData(url = '', data = {}) {
-    const response = await fetch(url, {
-      method: 'POST',
-      mode: 'cors',
-      cache: 'no-cache',
-      credentials: 'same-origin',
-      headers: {
-        'Content-Type': 'application/json'
-      },
-      redirect: 'follow',
-      referrerPolicy: 'no-referrer',
-      body: JSON.stringify(data)
-    });
-    return await response.json();
-  }
     const [list, setList] = useState([]);
     const [cards, setCards] = useState([]);
     const [item, setItem] = useState(null);
@@ -26,7 +10,6 @@ async function postData(url = '', data = {}) {
     const [text, setText] = useState('');
     const [titles, setTitles] = useState([]);
     const suggestionSelected = (item) => {
-        console.log('you selected', item);
         setText(item.title);
         setItem(item);
         setSuggestions([]);
@@ -35,12 +18,11 @@ async function postData(url = '', data = {}) {
     const handleText = (e) => {
         e.preventDefault();
         const value = e.target.value;
-        postData('http://localhost:3001/search',{key: value})
-        .then((data)=>{
-            console.log('data', data);
+        http.postData('http://localhost:3001/search',{ key: value })
+        .then((data)=> {
             let r = data.result;
-            let t=[];
-            r.map((item)=>{
+            let t = [];
+            r.map((item) => {
                 t.push(item.title);
             })
             setTitles(t);
@@ -66,17 +48,23 @@ async function postData(url = '', data = {}) {
     }
     const handleSubmit = (e) => {
         e.preventDefault();
-        let t = [item];
-        setCards([...cards, ...t]);
-        console.log('submitting', item);
-        console.log('cards', cards);
+        let flag = true;
+        for(let c=0;c<cards.length;c++) {
+            if(cards[c].id === item.id) {
+                flag = false;
+            }
+        }
+        if(flag) {
+            let t = [item];
+            setCards([...cards, ...t]);
+        }
         setText('');
     }
     return(
         <div className="AutoCompleteText">
             <form>
             <input
-            autoComplete="off" 
+            autoComplete="off"
             style = {{
                 "width": "50%",
                 "padding": "12px 20px",
@@ -115,11 +103,11 @@ async function postData(url = '', data = {}) {
         <div className="row">
         {cards.map((item)=>
             <div className='column'>
-            <div className='card' style={{ marginBottom:'10px'}}>
-                <h4>{item.title.slice(0,15)}...</h4>
-                <p>{item.summary.slice(0,75)}...</p>
-                <hr />
-                <small>Arvind</small>
+                <div className='card' style={{ marginBottom:'10px'}}>
+                    <h4>{ item.title.slice(0,15) }...</h4>
+                    <p>{ item.summary.slice(0,75) }...</p>
+                    <hr />
+                    <small>Arvind</small>
                 </div>
             </div>
         )}
