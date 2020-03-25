@@ -69,6 +69,10 @@ position: relative;}
     margin-left: 172px;
 }
 
+.AutoCompleteText li:hover {
+  background-color: gainsboro;
+}
+
 .App-Component{
     margin: 100px auto 0 auto;
     width: 100%;

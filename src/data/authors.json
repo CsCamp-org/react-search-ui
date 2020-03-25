@@ -1,0 +1,224 @@
+{
+    "authors": [
+        {
+            "book_id": 0,
+            "author": "Dan Harris"
+        },
+        {
+            "book_id": 1,
+            "author": "Grant Cardone"
+        },
+        {
+            "book_id": 2,
+            "author": "Anna Quindlen"
+        },
+        {
+            "book_id": 3,
+            "author": "James Webb Young"
+        },
+        {
+            "book_id": 4,
+            "author": "Tim Harford"
+        },
+        {
+            "book_id": 5,
+            "author": "Derek Sivers"
+        },
+        {
+            "book_id": 6,
+            "author": "Tom Rath"
+        },
+        {
+            "book_id": 7,
+            "author": "Rosamund Zander and Benjamin Zander"
+        },
+        {
+            "book_id": 8,
+            "author": "Adrian Slywotzky"
+        },
+        {
+            "book_id": 9,
+            "author": "Sun Tzu"
+        },
+        {
+            "book_id": 10,
+            "author": "Anne Lamott"
+        },
+        {
+            "book_id": 11,
+            "author": "Steve Martin"
+        },
+        {
+            "book_id": 12,
+            "author": "Darren Hardy"
+        },
+        {
+            "book_id": 13,
+            "author": "John Perkins"
+        },
+        {
+            "book_id": 14,
+            "author": "Hermann Simon"
+        },
+        {
+            "book_id": 15,
+            "author": "Nassim Nicholas Taleb"
+        },
+        {
+            "book_id": 16,
+            "author": "Sam Harris"
+        },
+        {
+            "book_id": 17,
+            "author": "Eliyahu Goldratt"
+        },
+        {
+            "book_id": 18,
+            "author": "Jared Diamond"
+        },
+        {
+            "book_id": 19,
+            "author": "Hugh MacLeod"
+        },
+        {
+            "book_id": 20,
+            "author": "Keith Johnstone"
+        },
+        {
+            "book_id": 21,
+            "author": "David Eagleman"
+        },
+        {
+            "book_id": 22,
+            "author": "Christopher Burkett"
+        },
+        {
+            "book_id": 23,
+            "author": "Bryan Stevenson"
+        },
+        {
+            "book_id": 24,
+            "author": "Will and Ariel Durant"
+        },
+        {
+            "book_id": 25,
+            "author": "John Graham"
+        },
+        {
+            "book_id": 26,
+            "author": "Kamal Ravikant"
+        },
+        {
+            "book_id": 27,
+            "author": "Epictetus"
+        },
+        {
+            "book_id": 28,
+            "author": "Calvin Tomkins"
+        },
+        {
+            "book_id": 29,
+            "author": "Seth Klarman"
+        },
+        {
+            "book_id": 30,
+            "author": "Jayson Gaignard"
+        },
+        {
+            "book_id": 31,
+            "author": "George Leonard"
+        },
+        {
+            "book_id": 32,
+            "author": "Howard Marks"
+        },
+        {
+            "book_id": 33,
+            "author": "Laurence Shames and Peter Barton"
+        },
+        {
+            "book_id": 34,
+            "author": "Judith Rich Harris"
+        },
+        {
+            "book_id": 35,
+            "author": "Oliver Sacks"
+        },
+        {
+            "book_id": 36,
+            "author": "Seneca"
+        },
+        {
+            "book_id": 37,
+            "author": "Bob Nease"
+        },
+        {
+            "book_id": 38,
+            "author": "Thomas M. Sterner"
+        },
+        {
+            "book_id": 39,
+            "author": "Mike Michalowicz"
+        },
+        {
+            "book_id": 40,
+            "author": "Naoki Higashida"
+        },
+        {
+            "book_id": 41,
+            "author": "Christopher Burkett"
+        },
+        {
+            "book_id": 42,
+            "author": "George S. Clason"
+        },
+        {
+            "book_id": 43,
+            "author": "Ethan Hawke"
+        },
+        {
+            "book_id": 44,
+            "author": "Yuval Noah Harari"
+        },
+        {
+            "book_id": 45,
+            "author": "Benjamin Hardy"
+        },
+        {
+            "book_id": 46,
+            "author": "Timothy Wilson"
+        },
+        {
+            "book_id": 47,
+            "author": "Dan Gilbert"
+        },
+        {
+            "book_id": 48,
+            "author": "Mark Manson"
+        },
+        {
+            "book_id": 49,
+            "author": "Tynan"
+        },
+        {
+            "book_id": 50,
+            "author": "V.S. Ramachandran"
+        },
+        {
+            "book_id": 51,
+            "author": "David Foster Wallace"
+        },
+        {
+            "book_id": 52,
+            "author": "Marshall Goldsmith"
+        },
+        {
+            "book_id": 53,
+            "author": "Paul Kalanithi"
+        },
+        {
+            "book_id": 54,
+            "author": "Spencer Johnson"
+        }
+    ]
+}

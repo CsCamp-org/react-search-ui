@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import '../css/AutoComplete.css';
 import http from '../helpers/http';
+import data from '../data/authors.json';
 
 const AutoComplete = () => {
     const [list, setList] = useState([]);
@@ -55,6 +56,12 @@ const AutoComplete = () => {
             }
         }
         if(flag) {
+            let authors = data.authors;
+            authors.map((i) => {
+                if(i.book_id===item.id) {
+                    item.author = i.author;
+                }
+            })
             let t = [item];
             setCards([...cards, ...t]);
         }
@@ -107,7 +114,7 @@ const AutoComplete = () => {
                     <h4>{ item.title.slice(0,15) }...</h4>
                     <p>{ item.summary.slice(0,75) }...</p>
                     <hr />
-                    <small>Arvind</small>
+                    <small>{item.author}</small>
                 </div>
             </div>
         )}
